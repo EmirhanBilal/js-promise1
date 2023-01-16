@@ -30,16 +30,16 @@ const createImage = function (imgPath) {
   return img;
 };
 
-image = createImage("img/img-sd.jpg");
+image = createImage("img/img-1.jpg");
 
 wait(2)
   .then(() => {
     image.style.display = "none";
-    image = createImage("img/img-sc.jpg");
+    image = createImage("img/img-2.jpg");
     return wait(2);
   })
   .then(() => {
     image.style.display = "none";
-    image = createImage("img/img-asd.jpg");
+    image = createImage("img/img-3.jpg");
     return wait(2);
   });
